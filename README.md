@@ -20,9 +20,7 @@
 
 **Google フォームから投稿できます（GitHub アカウント不要）：**
 
-> [困りごと報告フォーム](https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform)
->
-> ※ フォームのリンクは準備完了後に更新されます
+> [困りごと報告フォーム](https://docs.google.com/forms/d/e/1FAIpQLSd3NVgoHI2arTZQHBqdZSOJUR3ljz26XuyFFdFltDA-QnL37g/viewform)
 
 フォームから投稿された内容は、自動的に GitHub Issue として登録されます。
 
