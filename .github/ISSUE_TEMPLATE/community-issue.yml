@@ -1,0 +1,47 @@
+name: "困りごと報告"
+description: "地域の困りごとを報告する"
+title: "[報告] "
+labels: []
+body:
+  - type: dropdown
+    id: category
+    attributes:
+      label: カテゴリ
+      description: 困りごとの種類を選んでください
+      options:
+        - 安全（手すり・ガードレール等）
+        - 街灯・照明
+        - 道路・歩道
+        - カーブミラー・標識
+        - 公園・緑地
+        - ゴミ・不法投棄
+        - その他
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 困りごとの内容
+      description: どのような困りごとがあるか、できるだけ詳しく教えてください
+      placeholder: "例：○○交差点の角に手すりがなく、高齢者が転倒しそうで危ない"
+    validations:
+      required: true
+
+  - type: input
+    id: location
+    attributes:
+      label: 場所
+      description: 住所や目印を教えてください
+      placeholder: "例：神奈川区○○町1丁目 △△交差点付近"
+    validations:
+      required: true
+
+  - type: textarea
+    id: photo
+    attributes:
+      label: 写真
+      description: 写真があれば貼り付けてください（任意）
+      placeholder: "画像をドラッグ＆ドロップまたはペーストしてください"
+    validations:
+      required: false

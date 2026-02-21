@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>神奈川区 地域の困りごと一覧</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>神奈川区 地域の困りごと一覧</h1>
+      <p class="subtitle">神奈川県横浜市神奈川区の地域課題を見える化するプラットフォーム</p>
+      <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" class="btn-report" target="_blank" rel="noopener">
+        困りごとを報告する
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="stats" id="stats">
+      <div class="stat-card">
+        <span class="stat-number" id="total-count">-</span>
+        <span class="stat-label">報告総数</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="open-count">-</span>
+        <span class="stat-label">対応待ち</span>
+      </div>
+      <div class="stat-card">
+        <span class="stat-number" id="closed-count">-</span>
+        <span class="stat-label">対応済み</span>
+      </div>
+    </section>
+
+    <section class="filters">
+      <div class="filter-group">
+        <label for="category-filter">カテゴリ：</label>
+        <select id="category-filter">
+          <option value="all">すべて</option>
+          <option value="安全">安全</option>
+          <option value="街灯・照明">街灯・照明</option>
+          <option value="道路・歩道">道路・歩道</option>
+          <option value="カーブミラー・標識">カーブミラー・標識</option>
+          <option value="公園・緑地">公園・緑地</option>
+          <option value="ゴミ・不法投棄">ゴミ・不法投棄</option>
+          <option value="その他">その他</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label for="status-filter">状態：</label>
+        <select id="status-filter">
+          <option value="all">すべて</option>
+          <option value="open">対応待ち</option>
+          <option value="closed">対応済み</option>
+        </select>
+      </div>
+    </section>
+
+    <section id="issues-list" class="issues-list">
+      <div class="loading" id="loading">読み込み中...</div>
+    </section>
+
+    <div class="pagination" id="pagination"></div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>このサイトは <a href="https://github.com/kkhassou/kanagawaken-yokohamashi-kanagawaku-issue" target="_blank" rel="noopener">GitHub</a> で管理されています</p>
+      <p class="footer-note">困りごとの報告は <a href="https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform" target="_blank" rel="noopener">Google フォーム</a> から投稿できます</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
